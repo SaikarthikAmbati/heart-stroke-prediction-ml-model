@@ -31,19 +31,19 @@ def predict():
     if age is None or diabetic is None or highbloodpressure is None or sex is None:
         return 'Error: Missing form data', 400
     
-    if (diabetic == "yes"):
+    if (diabetic == "yes" or diabetic == "Yes"):
         diabetic = 1
     else:
         diabetic = 0
-    if (highbloodpressure == "yes"):
+    if (highbloodpressure == "yes" or highbloodpressure == "Yes"):
         highbloodpressure = 1
     else:
         highbloodpressure = 0
-    if (sex == "male"):
+    if (sex == "male" or sex == "Male"):
         sex = 1
     else:
         sex = 0
-    if(smoking == "yes"):
+    if(smoking == "yes" or smoking == "Yes"):
         smoking = 1
     else:
         smoking = 0
